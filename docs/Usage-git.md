@@ -11,9 +11,17 @@ commit
 
 git commit -m "Commit Comment"
 git branch -M master
-git remote add refservice_up  https://github.com/vsarip/refservice_up.git
-git push -u refservice_up master
-git remote add origin https://github.com/vsarip/refservice_up.git
+
+git remote add ref_restservice_user_profile  https://github.com/vsarip/ref_restservice_user_profile.git
+
+git push -u ref_restservice_user_profile
+or
+git push --set-upstream ref_restservice_user_profile master
+
+git checkout -b development 
+
+git push ref_restservice_user_profile development
 
 
 https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html
+
