@@ -1,0 +1,27 @@
+
+git init
+git add -A
+git commit -m "First Commit"
+git branch -M master
+git remote add hphcservices  https://github.com/vsarip/refservice_up.git
+git push -u refservice_up master
+git remote add origin https://github.com/vsarip/refservice_up.git
+
+
+https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html
+
+
+https://spring.io/guides/tutorials/bookmarks/
+
+docker tag <IMAGE_ID> yourhubusername/<REPO>:<tag>
+docker tag <TAG> varmad/refservice_up
+
+
+docker build -t refservice_up .
+
+docker tag local-image:tagname new-repo:tagname
+
+docker push varmad/refservice_up
+
+docker push new-repo:tagname
+
